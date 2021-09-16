@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Helmut Siegel</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/img/profile.jpg">
+</head>
+<body>
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+      new bootstrap.ScrollSpy(document.body, {
+        target: '#sideNav',
+        offset: 74,
+      });
+    }
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+          navbarToggler.click();
+        }
+      });
+    });
+  });
+</script>
+<app-root></app-root>
+</body>
+</html>

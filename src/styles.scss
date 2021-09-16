@@ -1,0 +1,19 @@
+//
+// Styles
+//
+
+// Import variables
+@import "src/assets/styles/variables";
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "src/assets/styles/global";
+
+// Components
+@import "src/assets/styles/components/sidenav.scss";
+@import "src/assets/styles/components/icons.scss";
+
+// Sections
+@import "src/assets/styles/sections/resume-section.scss";
