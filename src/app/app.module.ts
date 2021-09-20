@@ -8,6 +8,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import {AppRoutingModule} from "./app-routing.module";
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { CertificationsComponent } from './certifications/certifications.compone
     SkillsComponent,
     AboutMeComponent,
     LanguagesComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    ProfileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
