@@ -17,3 +17,10 @@
 
 // Sections
 @import "src/assets/styles/sections/resume-section.scss";
+
+.article {
+  p {
+    font-size: 1.3rem;
+    color: black;
+  }
+}
