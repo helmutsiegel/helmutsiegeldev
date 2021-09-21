@@ -4,42 +4,204 @@
   <h3 class="mt-5">Introduction</h3>
 
   <p>
-    In this article I'm going to share with you a lot of software engineering vocabulary.
+    In this article I'm going to share with you a lot of software engineering vocabulary and acronyms.
   </p>
 
-  <h4 class="mt-5">1. Immutability</h4>
+  <h4 class="mt-5">Immutability</h4>
   <p>
-    An object is immutable if you can't modify its state after creation
+    An object is immutable if you can't modify its state after creation.
   </p>
 
   <hr class="mt-3">
-  <h4 class="mt-3">2. Class Invariant</h4>
+  <h4 class="mt-3">Inheritance</h4>
+  <p>
+    The concept of classes automatically containing the variables and methods defined in their supertypes.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Instance</h4>
+  <p>
+    An object of a particular class. In programs written in the Java programming language, an instance of a class is
+    created using the new operator followed by the class name.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Member</h4>
+  <p>
+    A field or method of a class.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Thread</h4>
+  <p>
+    The basic unit of program execution. A process can have several threads running concurrently, each performing a
+    different job, such as waiting for events or performing a time-consuming job that the program doesn't need to
+    complete before going on.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Optional</h4>
+  <p>
+    A container object which may or may not contain a non-null value.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Transaction</h4>
+  <p>
+    An atomic unit of work that modifies data. A transaction encloses one or more program statements, all of which
+    either complete or roll back.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Encapsulation</h4>
+  <p>
+    Information and implementation hiding.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Side Effect</h4>
+  <p>
+    It happens if a method modifies some state outside its local scope.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">Class Invariant</h4>
   <p>
     A property that always remains true for all instances of a class no matter what happens<br>
     Let's see the following example:
   </p>
-  <img src="assets/blog/classInvariant.PNG">
+  <img src="assets/blog/classInvariant.PNG" alt="class invariant">
   <p class="m-1">
-    All the instances of the class <b>Person</b> will have a non null valid age.<br>
-    If the <b>dateOfBirth</b> parameter is invalid, the instance will not be created.
+    All the instances of the class <strong>Person</strong> will have a non null valid age.<br>
+    If the <strong>dateOfBirth</strong> parameter is invalid, the instance will not be created.
+  </p>
+
+  <h3 class="mt-5">Acronyms</h3>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">DRY - Don't repeat yourself</h4>
+  <p>
+    Is a clean code principle aimed at reducing repetition of software patterns to avoid redundancy.
   </p>
 
   <hr class="mt-3">
-  <h4 class="mt-3">DRY</h4>
+  <h4 class="mt-3">WET - Write Everything Twice</h4>
   <p>
-    Don't repeat yourself
+    Is the opposite of DRY, however it can have positive connotation. The rule of
+    <strong>three</strong> is an alternative of WET, and it says, that wait with abstraction until you
+    have written something three times.
   </p>
 
   <hr class="mt-3">
-  <h4 class="mt-3">WET</h4>
+  <h4 class="mt-3">DAMP - Descriptive and Meaningful Phrases</h4>
   <p>
-    Write Everything Twice
+    Is a clean code principle and promotes the readability of the code.
   </p>
 
   <hr class="mt-3">
-  <h4 class="mt-3">DAMP</h4>
+  <h4 class="mt-3">API - Application Programming Interface</h4>
   <p>
-    Descriptive and Meaningful Phrases
+    The specification of how a programmer writing an application accesses the behavior and state of classes and objects.
   </p>
 
+  <hr class="mt-3">
+  <h4 class="mt-3">REST - REpresentational State Transfer</h4>
+  <p>
+    Is an architectural style for providing standards between systems on the web, making it easier for systems to
+    communicate with each other.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">SOAP - Simple Object Access Protocol</h4>
+  <p>
+    The Simple Object Access Protocol (SOAP) uses a combination of XML-based data structuring and the Hyper Text
+    Transfer
+    Protocol (HTTP) to define a standardized method for invoking methods in objects distributed in diverse operating
+    environments across the Internet.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">DOM - Document Object Model</h4>
+  <p>
+    A tree of objects with interfaces for traversing the tree and writing an XML version of it, as defined by the W3C
+    specification.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">DTD - Document Type Definition</h4>
+  <p>
+    A description of the structure and properties of a class of XML files.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">GUI - Graphical User Interface</h4>
+  <p>
+    Refers to the techniques involved in using graphics, along with a keyboard and a mouse, to provide an easy-to-use
+    interface to some program.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">HTML - HyperText Markup Language</h4>
+  <p>
+    Is the standard markup language for creating Web pages.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">TCP/IP - Transmission Control Protocol based on IP</h4>
+  <p>
+    This is an Internet protocol that provides for the reliable delivery of streams of data from one host to another
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">FTP - File Transfer Protocol</h4>
+  <p>
+    Is based on TCP/IP, enables the fetching and storing of files between hosts on the Internet.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">HTTP - HyperText Transfer Protocol</h4>
+  <p>
+    The Internet protocol, based on TCP/IP, used to fetch hypertext objects from remote
+    hosts
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">HTTPS - HyperText Transfer Protocol layered over the SSL protocol</h4>
+  <p></p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">SSL - Secure Socket Layer</h4>
+  <p>
+    A protocol that allows communication between a Web browser and a server to be encrypted for privacy.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">SQL - Structured Query Language</h4>
+  <p>
+    The standardized relational database language for defining database objects and manipulating data.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">URI - Uniform Resource Identifier</h4>
+  <p>
+    A compact string of characters for identifying an abstract or physical resource.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">URL - Uniform Resource Locator</h4>
+  <p>
+    Is a reference to a web resource that specifies its location on the network and a mechanism for retrieving it.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">WWW - World Wide Web</h4>
+  <p>
+    The web of systems and the data in them that is the Internet.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">XML - Extensible Markup Language</h4>
+  <p>
+    A markup language that allows you to define the tags needed to identify the data and text in XML documents.
+  </p>
 </div>

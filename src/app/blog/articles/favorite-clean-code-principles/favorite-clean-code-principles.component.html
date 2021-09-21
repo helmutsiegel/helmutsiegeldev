@@ -7,15 +7,24 @@
     In this article I'm going to share with you my 10 favorite clean code principles.
   </p>
 
-
-  <h3 class="mt-5">1. Fail fast</h3>
+  <hr class="mt-3">
+  <h3 class="mt-3">1. Fail fast</h3>
 
   <p>
-    The fail fast principle stands for stopping the current operation as soon as any unexpected error occurs.
+    The fail fast principle stands for stopping the current operation as soon as any unexpected error occurs.<br>
+    Let's see the following examples:<br>
+    Let's suppose that the <b>criteria2</b> input parameter is invalid.
+    In the first example just after a lot of expensive operation will the execution fail.<br>
+    In the second example we first validate the input parameters, and just after being sure that they are valid we continue the operation.
   </p>
 
-  <img src="assets/blog/failFast1.PNG">
+  <img src="assets/blog/failFastBadExample.PNG" alt="Fail bad good example">
+  <img class="mt-2" src="assets/blog/failFastGoodExample.PNG" alt="Fail fast good example">
 
-
+  <hr class="mt-3">
+  <h4 class="mt-3">Magic numbers</h4>
+  <p>
+    Don't use magic numbers
+  </p>
 
 </div>
