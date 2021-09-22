@@ -10,23 +10,29 @@ import { LanguagesComponent } from './languages/languages.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { ProfileComponent } from './profile/profile.component';
+import {BlogModule} from "./blog/blog.module";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ExperiencesComponent,
-    EducationComponent,
-    SkillsComponent,
-    AboutMeComponent,
-    LanguagesComponent,
-    CertificationsComponent,
-    ProfileComponent
-  ],
+    declarations: [
+        AppComponent,
+        ExperiencesComponent,
+        EducationComponent,
+        SkillsComponent,
+        AboutMeComponent,
+        LanguagesComponent,
+        CertificationsComponent,
+        ProfileComponent
+    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BlogModule,
+    SharedModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [],
+    exports: [
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
