@@ -1,31 +1,109 @@
-
 <div class="article">
-  <h2>My favorite 10 clean code principles</h2>
+  <h2>My favorite 10 clean code principles TODO Concepts</h2>
 
   <h3 class="mt-5">Introduction</h3>
 
   <p>
-    In this article I'm going to share with you my 10 favorite clean code principles.
+    Over the last years, I worked on many projects and I encountered many types of code. I saw how powerful is when we
+    apply coding principles. In this article, I collected my 10 favorite clean code principle and I want to share with
+    you. Enjoy reading it.
   </p>
 
   <hr class="mt-3">
-  <h3 class="mt-3">1. Fail fast</h3>
-
+  <h4 class="mt-3">1. Favor readability</h4>
   <p>
-    The fail fast principle stands for stopping the current operation as soon as any unexpected error occurs.<br>
-    Let's see the following examples:<br>
-    Let's suppose that the <b>criteria2</b> input parameter is invalid.
-    In the first example just after a lot of expensive operation will the execution fail.<br>
-    In the second example we first validate the input parameters, and just after being sure that they are valid we continue the operation.
+    As developers we spend most of our time reading code and based on what we read, we try to figure out how to write
+    new code. Reading and understanding code is always harder than writing code, which means that reading code consumes
+    a lot of our energy. Working in a team you should always favor readability over conciseness. There is no point in
+    having concise code that other people don't understand.
   </p>
-
-  <img src="assets/blog/failFastBadExample.PNG" alt="Fail bad good example">
-  <img class="mt-2" src="assets/blog/failFastGoodExample.PNG" alt="Fail fast good example">
 
   <hr class="mt-3">
-  <h4 class="mt-3">Magic numbers</h4>
+  <h4 class="mt-3">2. Principle of proximity</h4>
   <p>
-    Don't use magic numbers
+    It means that the code should be organized in a way that it reads like a book or a newspaper article, from top to
+    the bottom. This principle is part of the previous and focuses more on organizing the variable and methods
+    inside of a class. If you always have to scroll up and down to understand what is going on, then your code is not
+    organized well.
   </p>
 
+  <hr class="mt-3">
+  <h4 class="mt-3">3. KISS - Keep It Simple Stupid</h4>
+  <p>
+    This principle is pretty much self-explanatory. Always after you have written a piece of code, you should ask
+    yourself: "can this be written in a simpler way?". If yes then do it. Remember, we spend most of our time reading
+    and understanding code. Simpler code is easier to understand.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">4. DRY - Don't Repeat Yourself</h4>
+  <p>
+    This principle aims to reduce repetition. The biggest benefit of using DRY principle is maintainability. If you have
+    to modify a logic that is repeated, you could easily forget to fix the occurrences. Even if you know exactly all the
+    places, the maintenance takes longer because you have to fix it in many places instead of one. By having
+    non-repeated
+    code, new logic, or bug fixes have to be made only in one place.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">5. DAMP - Descriptive And Meaningful Phrases</h4>
+  <p>
+    This principle promotes the readability of the code. More readable code is easier to understand. When the code is
+    easier to understand is easier to maintain. This principle reduces maintainability by reducing the time needed to
+    understand the code. However, be careful and don't use too long names in the production code.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">6. Don't use magic numbers</h4>
+  <p>
+    A magic number is a numeric value that has no obvious meaning. Using magic numbers makes the code harder to
+    understand. I have seen once a method with a name <b>getDaysSinceSth</b> that could return -99, -1, 0, or any
+    positive number less than 14 in a normal case. After a long analysis, I figured out that -99 and -1 were errors, 0
+    meant not created, and positive numbers meant days since created. Imagine that you have to add another type of
+    error. That would mean that you have to choose a new magic number. I think it is pretty obvious the side hustle of
+    using magic numbers.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">7. SRP - Single Responsibility Principle</h4>
+  <p>
+    This principle is one of the SOLID principles, that states that every module, class, or function should have one
+    responsibility. If the name of a module is business-activity then that nodule should be responsible for
+    implementing business logic. If the name of a class is CarBuilder, then that class should not send requests to an
+    external system. Applying this principle provides easy maintainability and readability.
+  </p>
+
+  <hr class="mt-3">
+  <h4 class="mt-3">8. Fluent Interface Pattern</h4>
+  <p>
+    A fluent interface provides an easy-readable, flowing interface, that often mimics a domain-specific language. Using
+    this pattern results in code that can be read nearly as human language. The builder pattern is a good example for
+    that, so let's see the following two examples:
+  </p>
+  <img src="assets/blog/noFluentInterfacePattern.PNG" alt="No fluent interface"><br>
+  <img class="mt-2" src="assets/blog/fluentInterfacePattern.PNG" alt="Fluent interface">
+
+
+  <hr class="mt-3">
+  <h4 class="mt-3">9. Return early</h4>
+  <p>
+    Return early is the way of writing functions or methods so that the expected positive result is returned at the end
+    of the function and the rest of the code terminates the execution when conditions are not met. Applying this
+    principle provides better readability. In the second example, we can extract the validation from the beginning, but
+    in the first example, that is not possible.
+  </p>
+  <img src="assets/blog/returnEarlyNotOK.PNG" alt="Return early not ok"><br>
+  <img class="mt-2" src="assets/blog/returnEarlyOK.PNG" alt="Return early ok">
+
+  <hr class="mt-3">
+  <h4 class="mt-3">10. The boy scout rule</h4>
+  <p class="mb-5">
+    <strong>"Always leave the code you're editing a little better than you found it"</strong><br>
+    This is rather a rule of thumb than a principle, but overall this is my favorite one. People tend to think, that
+    the code they did not have to modify should not touch. It happens often that we work on a project with old code, and
+    the developers who wrote the code are not any more members of the team. In that case, just applying this rule will
+    improve the quality of the code. However, be careful with this, and agree with the management about it, because
+    extra improvement means extra time and money. In my experience, 5% extra effort for this is fine from the
+    management's side.
+  </p>
 </div>

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -6,11 +6,16 @@ import {Router} from "@angular/router";
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.scss']
 })
-export class NavigationBarComponent implements OnInit {
+export class NavigationBarComponent {
 
   constructor(public router: Router) {
   }
 
-  ngOnInit(): void {}
-
+  navigateToBlog() {
+    let aboutNavLink = document.getElementById('navLinkAbout');
+    if (aboutNavLink) {
+      aboutNavLink.setAttribute('class', 'nav-link nav-element');
+    }
+    this.router.navigate(['blog']);
+  }
 }

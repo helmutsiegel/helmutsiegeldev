@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {BlogComponent} from "./blog/blog.component";
 import {FavoriteCleanCodePrinciplesComponent} from "./articles/favorite-clean-code-principles/favorite-clean-code-principles.component";
-import {SoftwareEngineerVocabularyComponent} from "./articles/software-engineer-vocabulary/software-engineer-vocabulary.component";
 
 const routes: Routes = [{
   path: '',
@@ -11,9 +10,6 @@ const routes: Routes = [{
 }, {
   path: 'favorite-clean-code-principles',
   component: FavoriteCleanCodePrinciplesComponent
-}, {
-  path: 'software-engineer-vocabulary',
-  component: SoftwareEngineerVocabularyComponent
 }];
 
 @NgModule({
