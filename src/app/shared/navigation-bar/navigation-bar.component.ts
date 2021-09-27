@@ -16,6 +16,10 @@ export class NavigationBarComponent {
     if (aboutNavLink) {
       aboutNavLink.setAttribute('class', 'nav-link nav-element');
     }
+    let togglerButton = document.getElementById("togglerButton");
+    if (togglerButton) {
+      togglerButton.click();
+    }
     this.router.navigate(['blog']);
   }
 }
