@@ -17,7 +17,7 @@ export class NavigationBarComponent {
       aboutNavLink.setAttribute('class', 'nav-link nav-element');
     }
     let togglerButton = document.getElementById("togglerButton");
-    if (togglerButton) {
+    if (togglerButton && togglerButton.getAttribute('aria-expanded') === 'true') {
       togglerButton.click();
     }
     this.router.navigate(['blog']);
